@@ -8,7 +8,7 @@ const removeAll = ({commit}) => {
             commit('REMOVE_ALL')
             resolve()
         }, 1500) 
-     })
+    })
 }
 
 export default {
