@@ -8,7 +8,7 @@
       </form>
 
       <ul>
-        <li v-for="(link, index) in links" v-bind:key="index">
+        <li v-for="(link, index) in links.links" v-bind:key="index">
           {{ link }}
           <button v-on:click="removeLinks(index)" class="rm">Remove</button>
         </li>
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
   html, #app, .home {
     height: 100%;
   }
