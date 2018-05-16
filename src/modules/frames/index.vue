@@ -1,23 +1,16 @@
 <template>
-  <div class="frame-list">
-    <h1>Frame List</h1>
-    <ul>
-      <li v-for="(frame, index) in frames" v-bind:key="index">
-        <frame :frame="frame" />
-      </li>
-    </ul>
-  </div>
+  <FrameList :frames="frames"/>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 import store from './_store'
-import Frame from './_components/Frame'
+import FrameList from './_components/FrameList'
 
 export default {
-  name: 'FrameList',
+  name: 'FramesIndex',
   components: {
-    Frame
+    FrameList
   },
   computed: {
     ...mapGetters({
@@ -38,14 +31,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped> 
-  ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #F4F4F4;
-  }
-  ul li {
-    padding: 20px;
-    background: white;
-    margin-bottom: 8px;
-  } 
+
 </style>

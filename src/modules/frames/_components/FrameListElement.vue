@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'frame',
+    name: 'FrameListElement',
     props: {
         frame: {
             type: Object
@@ -16,7 +16,9 @@ export default {
 </script>
 
 <style scoped>
-
+    .frame {
+        display: inline;
+    }
 </style>
 
 
