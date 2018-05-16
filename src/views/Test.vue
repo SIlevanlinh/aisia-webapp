@@ -1,24 +1,17 @@
 <template>
   <div class="home">
-    <Links :links="links" />
+    <LinksContainer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import Links from '@/components/Links.vue'
-import { mapGetters } from 'vuex'
+import LinksContainer from '@/modules/links'
 
 export default {
   name: 'test',
   components: {
-    Links
-  },
-  computed: {
-      ...mapGetters({
-          links: 'links/links'
-      })
+    LinksContainer
   }
 }
 </script>
