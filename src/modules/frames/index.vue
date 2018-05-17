@@ -1,20 +1,30 @@
 <template>
-  <FrameList :frames="frames"/>
+  <div class="frames">
+    <div class="frame-item">
+      <Frame :frame="defaultFrame"/>
+    </div>
+    <div class="frame-list">
+      <FrameList :frames="frames"/>
+    </div>    
+  </div>  
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 import store from './_store'
 import FrameList from './_components/FrameList'
+import Frame from './_components/Frame'
 
 export default {
   name: 'FramesIndex',
   components: {
-    FrameList
+    FrameList,
+    Frame
   },
   computed: {
     ...mapGetters({
-      frames: '$_frames/frames'
+      frames: '$_frames/frames',
+      defaultFrame: '$_frames/currentFrame'
     })
   },
   created() {
@@ -31,5 +41,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped> 
+  .frame-item {
+    float: left;
+  }
 
+  .frame-list {
+    float: right;
+  }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="frame-list">
     <h1>Frame List</h1>
-    <FrameListElement v-for="(frame, index) in frames" v-bind:key="index" :frame="frame">
+    <FrameListElement v-for="(frame, index) in frames" v-bind:key="index" :frame="frame" v-on:click.native="updateCurrentFrame(frame)">
     </FrameListElement>
   </div>
 </template>
@@ -18,7 +18,12 @@ export default {
         frames: {
             type: Array
         }
-  }
+    },
+    methods: {
+        updateCurrentFrame(frame) {
+            this.$store.dispatch('$_frames/updateCurrentFrame', frame)         
+        }
+    }
 }
 </script>
 

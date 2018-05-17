@@ -1,17 +1,19 @@
 <template>
     <div class="frame">
-        <img :src="frame.thumbnailUrl" />
+        <h1>Specific Frame</h1>
+        <h3>{{ frame.title }} </h3>
+        <img :src="frame.url" />
     </div>
 </template>
 
 <script>
 export default {
-    name: 'FrameListElement',
+    name: 'Frame',
     props: {
         frame: {
             type: Object
         }
-  }
+    }
 }
 </script>
 

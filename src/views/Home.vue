@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home">    
     <FramesContainer />
   </div>
 </template>
@@ -15,3 +15,8 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
+

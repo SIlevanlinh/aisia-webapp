@@ -10,6 +10,11 @@ const getFrames = (context) => {
     })
 }
 
+const updateCurrentFrame = (context, frame) => {
+    context.commit('CURRENT_FRAME_UPDATED', frame)
+}
+
 export default {
-    getFrames
+    getFrames,
+    updateCurrentFrame
 }
