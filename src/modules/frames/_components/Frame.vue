@@ -1,7 +1,6 @@
 <template>
     <div class="frame">
-        <h1>Specific Frame</h1>
-        <h3>{{ frame.title }} </h3>
+        <span class="title">Frame <span class="badge badge-secondary">#{{ frame.id }}</span> {{ frame.title.capitalize() }} </span>
         <img :src="frame.url" />
     </div>
 </template>
@@ -15,10 +14,16 @@ export default {
         }
     }
 }
+
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
 </script>
 
 <style scoped>
-
+    .title {
+        font-size: 20px;
+    }
 </style>
 
 
