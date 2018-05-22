@@ -5,7 +5,10 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+  @import './assets/styles/aisia.scss';
+  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     
