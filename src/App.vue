@@ -6,7 +6,7 @@
 </template>
 
 <style>
-  @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
+  /* @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"); */
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
