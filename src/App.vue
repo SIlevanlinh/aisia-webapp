@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
     <!-- <img src="./assets/logo.png" alt=""> -->
     <router-view/>
   </div>
@@ -11,6 +11,6 @@
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    
+    background: #F6F6F6;
   }
 </style>
