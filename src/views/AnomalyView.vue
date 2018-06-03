@@ -7,7 +7,6 @@
 <script>
 // @ is an alias to /src
 // import FramesContainer from '@/modules/frames'
-// import componentStyle from '@/assets/css/styles.css'
 
 export default {
   name: 'anomaly',
@@ -18,7 +17,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
-  /* @import '@/assets/css/styles.css'; */
+  @import '../assets/styles/css/styles.css';
 </style>
 
