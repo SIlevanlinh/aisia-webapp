@@ -1,12 +1,13 @@
 <template>
   <div id="app" class="container">
-    <img src="https://japaneast1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=UEFHRVN8U1BP&docid=https%3A%2F%2Fazsint.sharepoint.com%2F_api%2Fv2.0%2Fsites%2Fazsint.sharepoint.com%2C515d5ec6-51a6-48e8-a989-a3587d5a79bc%2Cff2733f2-6e2c-4db7-88cb-6cc9a4119e36%2Flists%2F393dbc4b-c424-4d37-85bf-32f1f1f6aa47%2Fitems%2F7be1d9d0-1f3d-467c-a528-09e76462861e%2FdriveItem&w=480&oauth_token=bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImlCakwxUmNxemhpeTRmcHhJeGRacW9oTTJZayIsImtpZCI6ImlCakwxUmNxemhpeTRmcHhJeGRacW9oTTJZayJ9.eyJhdWQiOiJodHRwczovL2phcGFuZWFzdDEtbWVkaWFwLnN2Yy5tcyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzE2ODAxMzUzLTk1ZDYtNDBlNy1iMTM2LTJjNTc5NTg1NWQzMS8iLCJpYXQiOjE1MjY2MjY2MjEsIm5iZiI6MTUyNjYyNjYyMSwiZXhwIjoxNTI2NjMwNTIxLCJhY3IiOiIxIiwiYWlvIjoiWTJkZ1lIaDEvcmRHR045RDVWT3I2bVNzZGhwWkt3Zlc1UzM2ZUh4SzFZbUtGOU5OdmFvQSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJhcHBpZGFjciI6IjIiLCJhdXRoX3RpbWUiOjE1MjMyNjQ1ODMsImZhbWlseV9uYW1lIjoiTGUiLCJnaXZlbl9uYW1lIjoiTGluaCIsImlwYWRkciI6IjExOC4yMzguMjI4LjciLCJuYW1lIjoiTGUgVmFuIExpbmgiLCJvaWQiOiI2YjQyOTliMy02MGUwLTQ4YjAtOTU1NS00NTZmM2NlYTQ0ZDUiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjQwMTk1NjcxMS0yOTM4MDM5MzU2LTEzNjIwMzE4NTgtMTMwMDYiLCJwdWlkIjoiMTAwMzAwMDBBOUJBREM3NyIsInNjcCI6IlNpdGVzLm1hbmFnZS5BbGwiLCJzdWIiOiI3WnFBZTZvZ0ZGcVBjeWZUdGw5cU1INWJlOFgxZVNVT1RHc2lTRmJsYkxNIiwidGlkIjoiMTY4MDEzNTMtOTVkNi00MGU3LWIxMzYtMmM1Nzk1ODU1ZDMxIiwidW5pcXVlX25hbWUiOiJsZXZhbmxpbmhAc2ludC5jby5qcCIsInVwbiI6ImxldmFubGluaEBzaW50LmNvLmpwIiwidXRpIjoiOElqZVRVZ0tBa3lTbUp3aG9ZVVlBQSIsInZlciI6IjEuMCJ9.jDUDa1YA03CeLDTIllE3khFUclaxOXRrkRye-BFwgQw6rlQBs2X9QjHnpsCH6DgOhCe5wL5YgZKejPQOlJhj5bMKOCnlmXzmd5ju1bdnn3a09SMCyhsAxurPNyRt0lLkYdUdn9HbjyGVVqVjxdvrO4qWVfY2gUvibVrV3Nrz0gjnkN1RIuvxnw4E2L4WpxOISszgp0DGluE4lIA6RFS_mPfjYHZUIoQMz-_byZfX5TQhq30WBQOJej3qFk5GkDTAQ5JAF_PG6hkL4KEEy3NbofWhmcuafgTCBM0wfemRdd82J1_Jf6sRfgE83aqrc-7bzCsW_cPmo_sWi6HNmohfYg" alt="">
+    <img src="./assets/logo.png" alt="">
     <router-view/>
   </div>
 </template>
 
-<style>
-  /* @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"); */
+<style lang="scss">
+  @import './assets/styles/aisia.scss';
+  @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
